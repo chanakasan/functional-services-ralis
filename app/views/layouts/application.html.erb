@@ -8,9 +8,20 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <style>
+      .wrapper {
+        padding: 20px 40px;
+      }
+      .results {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
   </head>
 
   <body>
-    <%= yield %>
+    <div class="wrapper">
+      <%= yield %>
+    </div>
   </body>
 </html>
